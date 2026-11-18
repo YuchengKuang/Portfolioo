@@ -1,1 +1,120 @@
-*{box-sizing:border-box}body{margin:0;color:#35352f;font:16px/1.6 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:clamp(24px,6vw,84px) 5vw}h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.045em;line-height:1.12}h2{margin:2rem 0 .75rem;line-height:1.25}a{color:#174e72}a:focus-visible{outline:3px solid #2373a2}article{min-width:0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px 36px}.grid article,.research{border-top:1px solid #deded8;padding-top:20px}.card{display:block;background:#e9f2f7;padding:12px 15px;border-radius:4px;font-weight:650;text-decoration:none}.card:hover{background:#d5e8f2;text-decoration:underline}p{margin:.6rem 0}i{color:#58615d}.detail{max-width:850px}li{margin:.3rem 0}.back{display:inline-block;margin:1rem 0}.research{display:grid;grid-template-columns:3fr 7fr;gap:25px}.research>div{grid-column:2}@media(max-width:650px){.grid,.research{display:block}.grid article{margin-bottom:22px}}
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    color: #35352f;
+    font: 16px/1.6 system-ui, sans-serif
+}
+
+main {
+    max-width: 1120px;
+    margin: auto;
+    padding: clamp(24px, 6vw, 84px) 5vw
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    letter-spacing: -.045em;
+    line-height: 1.12
+}
+
+h2 {
+    margin: 2rem 0 .75rem;
+    line-height: 1.25
+}
+
+a {
+    color: #174e72
+}
+
+a:focus-visible {
+    outline: 3px solid #2373a2
+}
+
+article {
+    min-width: 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 36px
+}
+
+.grid article,
+.research {
+    border-top: 1px solid #deded8;
+    padding-top: 20px
+}
+
+.card {
+    display: block;
+    background: #e9f2f7;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-weight: 650;
+    text-decoration: none
+}
+
+.card:hover {
+    background: #d5e8f2;
+    text-decoration: underline
+}
+
+p {
+    margin: .6rem 0
+}
+
+i {
+    color: #58615d
+}
+
+.detail {
+    max-width: 850px
+}
+
+li {
+    margin: .3rem 0
+}
+
+.back {
+    display: inline-block;
+    margin: 1rem 0
+}
+
+.research {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 25px
+}
+
+.research>div {
+    grid-column: 2
+}
+
+.project-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.scroll-fade {
+  will-change: opacity;
+}
+
+
+@media(max-width:650px) {
+
+    .grid,
+    .research {
+        display: block
+    }
+
+    .grid article {
+        margin-bottom: 22px
+    }
+}

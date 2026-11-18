@@ -1,9 +1,29 @@
 <!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Emergency Evacuation Planning</title><link rel="stylesheet" href="style.css"><main class="detail"><a class="back" href="index.html">← Back to portfolio</a><h1>Emergency Evacuation Planning</h1><p><i>ArcGIS Pro · Network analysis</i></p>
 <h2>Overview</h2>
 <p>Built a road network model across Glen Innes LGA to support emergency evacuation planning from residential addresses. The project brought network analysis and map design together to present evacuation routes and alternative route options.</p>
+<img class="project-preview scroll-fade" src="images/Demo.png" alt="Evacuation routes across the Glen Innes road network">
 <h2>My contribution</h2>
 <ul><li>Built and created the road network dataset for Glen Innes LGA.</li><li>Applied spatial and network analysis using residential addresses to identify evacuation routes and alternatives.</li><li>Produced evacuation plan maps showing routes in the context of local streets and connecting roads.</li></ul>
 <h2>Workflow</h2>
 <p>Road and residential address data → Road network dataset → Evacuation and alternative route analysis → Evacuation plan maps</p>
 <h2>Result</h2>
-<p>Delivered mapped evacuation routes and alternatives, providing a clear spatial reference for reviewing route options from residential locations across the LGA.</p><a class="back" href="index.html">← Back to portfolio</a></main></html>
+<p>Delivered mapped evacuation routes and alternatives, providing a clear spatial reference for reviewing route options from residential locations across the LGA.</p><a class="back" href="index.html">← Back to portfolio</a></main>
+<script>
+    const scrollFadeImage = document.querySelector('.scroll-fade');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (scrollFadeImage && !prefersReducedMotion) {
+        const updateScrollFade = () => {
+            const top = scrollFadeImage.getBoundingClientRect().top;
+            const fadeStart = window.innerHeight * 0.15;
+            const fadeDistance = window.innerHeight * 0.55;
+            const progress = Math.min(1, Math.max(0, (fadeStart - top) / fadeDistance));
+            scrollFadeImage.style.opacity = 1 - progress;
+        };
+
+        updateScrollFade();
+        window.addEventListener('scroll', updateScrollFade, { passive: true });
+        window.addEventListener('resize', updateScrollFade);
+    }
+</script>
+</html>
