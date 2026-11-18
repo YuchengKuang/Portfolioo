@@ -1,0 +1,55 @@
+<!doctype html><html lang="en-AU"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI-Enabled Road Defect Monitoring and Spatial Intelligence Dashboard</title><link rel="stylesheet" href="style.css"><main class="detail"><a class="back" href="index.html">← Back to portfolio</a><h1>AI-Enabled Road Defect Monitoring and Spatial Intelligence Dashboard</h1><p><b>Operational Council GIS implementation</b><br><i>Road AI · API integration · ArcGIS Notebooks · Python · ArcGIS Online · ArcGIS Dashboards</i></p>
+<p><b>Project status:</b> Operational — the dashboard is already in use<br><b>My role:</b> Established the data integration and GIS workflow, completed road-level spatial analysis, and designed and implemented the operational dashboard.</p>
+<h2>Project overview</h2>
+<p>This project converts AI-generated road inspection outputs from the Road AI platform into spatial information that Council staff can explore and use during road maintenance investigations and infrastructure planning.</p>
+<p>The work connects automated data retrieval, Python processing, ArcGIS Online mapping, road-level spatial analysis and an operational ArcGIS Dashboard. The result is a more accessible view of recorded road defects, including their locations, categories, severity and associated images.</p>
+<p>The dashboard is a decision-support resource. It helps staff investigate patterns and inform maintenance prioritisation and capital works planning; it does not make engineering assessments or automatically determine which works should be undertaken.</p>
+<h2>1. The Council business problem</h2>
+<p>AI-enabled road inspection technology can identify and record potential defects at scale. However, AI-generated inspection records do not become operationally useful simply because they have been captured.</p>
+<p>To support Council work, inspection outputs need to be brought into a spatial environment where staff can understand:</p>
+<ul><li><b>Where</b> recorded defects are located across the road network.</li><li><b>What</b> types of defects have been recorded and how their severity is represented.</li><li><b>How</b> defects are distributed in relation to individual roads and the wider network.</li><li><b>Which locations or road sections may warrant further investigation.</b></li><li><b>How</b> inspection information and associated images can be accessed in a practical operational interface.</li></ul>
+<p>Without a repeatable data workflow and spatial presentation, inspection outputs can remain difficult to compare, interpret and apply to network-level planning. The project therefore focused on translating Road AI data into structured, mappable information and making that information accessible through a dashboard.</p>
+<p>AI detections are treated as inspection inputs for Council users to review, not as a substitute for field verification, engineering judgement or formal asset-condition assessment.</p>
+<h2>2. My contribution</h2>
+<p>I independently established and implemented the core GIS workflow from data retrieval through to operational visualisation.</p>
+<ul><li><b>API integration:</b> Established an automated API connection to retrieve road inspection data from the Road AI platform.</li><li><b>Python processing:</b> Built a Python processing workflow in ArcGIS Notebooks to prepare the retrieved records for GIS use.</li><li><b>ArcGIS Online integration:</b> Integrated the processed inspection records into ArcGIS Online for spatial mapping and access.</li><li><b>Cartographic configuration:</b> Configured map symbology to distinguish defect types and severity levels.</li><li><b>Image-enabled information access:</b> Configured feature pop-ups to present defect attributes with associated images.</li><li><b>Road-level spatial analysis:</b> Analysed defect information at road level to help reveal spatial patterns and concentrations across the network.</li><li><b>Operational dashboard:</b> Designed and implemented an ArcGIS Dashboard that brings the mapped inspection information and analysis into an operational interface. The dashboard is already in use.</li></ul>
+<p>This contribution covered the connection between an AI inspection platform and Council's GIS environment, rather than only producing a static map or presentation.</p>
+<h2>3. End-to-end technical workflow</h2>
+<p><b>Road AI platform → API retrieval → ArcGIS Notebooks / Python → ArcGIS Online → Road-level spatial analysis → ArcGIS Dashboard</b></p>
+<h3>Stage 1 — Road AI inspection platform</h3>
+<p>The Road AI platform is the source of AI-generated road inspection records. These records provide the inspection information that is subsequently prepared for spatial use.</p>
+<h3>Stage 2 — Automated API retrieval</h3>
+<p>I established an automated API connection to retrieve records from the Road AI platform. This provides a repeatable connection between the inspection platform and the GIS processing workflow.</p>
+<p>The specific authentication method, endpoint structure, retrieval schedule and whether the process retrieves full or incremental updates are technical details to confirm before publication.</p>
+<h3>Stage 3 — Python processing in ArcGIS Notebooks</h3>
+<p>I developed a Python workflow in ArcGIS Notebooks to process the retrieved data before integrating it into ArcGIS Online. This processing stage prepares the inspection records for mapping and subsequent analysis.</p>
+<p>The exact field transformations, validation rules, duplicate-handling approach, geometry operations and error-handling procedures should be documented only after they have been checked against the implemented notebook.</p>
+<h3>Stage 4 — ArcGIS Online integration and mapping</h3>
+<p>The processed records are integrated into ArcGIS Online. I configured the spatial presentation so that users can distinguish defect types and severity through map symbology.</p>
+<p>I also configured image-enabled pop-ups, allowing users to inspect relevant defect attributes alongside associated photographs where those images are available and approved for use.</p>
+<h3>Stage 5 — Road-level spatial analysis</h3>
+<p>I performed spatial analysis at road level to move beyond viewing defects as isolated inspection points. This provides a network-oriented view of recorded defects and helps users identify roads or areas that may merit closer investigation.</p>
+<p>The precise road-linking method and aggregation logic are points to confirm; this case study does not assume a particular spatial join, matching rule or road-segmentation method.</p>
+<h3>Stage 6 — Operational ArcGIS Dashboard</h3>
+<p>I designed and implemented an ArcGIS Dashboard to make the mapped inspection information and road-level analysis accessible through an operational interface. The dashboard is already in use by Council.</p>
+<p>It supports the review and interpretation of inspection information for maintenance investigations and planning discussions. It is a decision-support tool: Council staff remain responsible for validating issues and considering engineering advice, field conditions, service levels, risk and available budgets.</p>
+<h2>4. Key outputs</h2>
+<p>| Output | Description |
+| --- | --- |
+| Automated data connection | API connection to retrieve Road AI inspection records. |
+| Python processing workflow | ArcGIS Notebook workflow to prepare retrieved records for GIS integration. |
+| ArcGIS Online spatial data | Processed inspection records made available in the Council GIS environment. |
+| Defect web map | Defect type and severity represented through configured symbology. |
+| Image-enabled pop-ups | Defect attributes presented with associated images, where available and authorised. |
+| Road-level spatial analysis | Network-oriented analysis of the distribution and concentration of recorded defects. |
+| Operational dashboard | An implemented ArcGIS Dashboard that is already in use. |</p>
+<h2>5. Practical outcomes and Council value</h2>
+<p>The project turns inspection outputs into a spatial resource that can be accessed and interpreted in a Council GIS context.</p>
+<p>Its practical value includes:</p>
+<ul><li><b>Improved visibility:</b> Staff can view recorded defects spatially rather than relying only on disconnected inspection records.</li><li><b>More accessible inspection information:</b> Defect categories, severity and associated images can be reviewed through a map-based interface.</li><li><b>Network-level perspective:</b> Road-level analysis helps staff examine how recorded defects are distributed across the network.</li><li><b>Maintenance investigation support:</b> The dashboard provides information that can help staff identify locations for further review and investigation.</li><li><b>Planning support:</b> Spatial patterns can inform discussions about maintenance priorities and potential capital works, alongside field inspections, engineering assessments, asset-management requirements and budget considerations.</li><li><b>Operational use:</b> The dashboard has progressed beyond a prototype and is already in use.</li></ul>
+<p>No quantified time savings, defect totals, accuracy rates or improvements in road condition are claimed here because verified figures have not been supplied for this case study.</p>
+<h2>6. Technical summary for GIS and local-government hiring managers</h2>
+<p>This project demonstrates an end-to-end GIS integration workflow connecting an external AI-enabled inspection platform with a Council's spatial information environment. I established an automated API connection to retrieve Road AI records, developed a Python processing workflow in ArcGIS Notebooks, and integrated the processed records into ArcGIS Online. I configured defect-type and severity symbology, image-enabled pop-ups and road-level spatial analysis, then designed and implemented an operational ArcGIS Dashboard that is already in use.</p>
+<p>The technical contribution is the translation of inspection data into structured spatial information and an operational decision-support interface. The dashboard assists Council staff with reviewing defect distribution and informing maintenance and capital planning discussions; engineering assessment and work prioritisation remain human-led processes.</p>
+<p><b>Skills demonstrated</b></p>
+<ul><li>ArcGIS Online and ArcGIS Dashboards</li><li>ArcGIS Notebooks and Python</li><li>API-based data retrieval and system integration</li><li>GIS data preparation and spatial data integration</li><li>Thematic symbology and image-enabled pop-up configuration</li><li>Road-level spatial analysis</li><li>Operational web GIS design</li><li>Translating technical data workflows into local-government decision support</li></ul><a class="back" href="index.html">← Back to portfolio</a></main></html>
